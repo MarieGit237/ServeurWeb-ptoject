@@ -26,7 +26,7 @@ public class WebServer {
     private void sendResponse(Socket Socket){
         try {
             OutputStream Output = Socket.getOutputStream();
-            String Response = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 27\r\n Requete traitee avec success";             
+            String Response = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 27\r\nRequete traitee avec succes";             
             Output.write(Response.getBytes());
             Output.flush();
 
